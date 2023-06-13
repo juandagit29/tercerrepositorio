@@ -1,0 +1,4 @@
+encargado del horno: 250 pesos al dia
+encargado de atender: 200 pesos al dia
+encargado de la amazar el pan: 300 pesos al dia
+encargado de endulzar el pan : 300 pesos al dia
