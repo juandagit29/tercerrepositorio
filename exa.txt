@@ -1,0 +1,353 @@
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git branch
+* main
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git branch producción
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git branch ventas
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git branch recurso_humano
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git branch
+* main
+  producción
+  recurso_humano
+  ventas
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git checkout producción
+Switched to branch 'producción'
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (producción)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (producción)
+$ git commit -m "cosas de produccion"
+[producción 99ac83b] cosas de produccion
+ 3 files changed, 2 insertions(+)
+ create mode 100644 materia prima.txt
+ create mode 100644 pan.jpg
+ create mode 100644 producto final.txt
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (producción)
+$ git push origin producción
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 54.62 KiB | 13.65 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'producción' on GitHub by visiting:
+remote:      https://github.com/juandagit29/tercerrepositorio/pull/new/producci%C3%B3n
+remote:
+To https://github.com/juandagit29/tercerrepositorio.git
+ * [new branch]      producción -> producción
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (producción)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git commit -m "las tiendas"
+[ventas 8a1f0c2] las tiendas
+ 1 file changed, 3 insertions(+)
+ create mode 100644 tiendas.txt
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git push origin ventas
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ventas' on GitHub by visiting:
+remote:      https://github.com/juandagit29/tercerrepositorio/pull/new/ventas
+remote:
+To https://github.com/juandagit29/tercerrepositorio.git
+ * [new branch]      ventas -> ventas
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git commit -m "los empleados"
+[recurso_humano d1d730f] los empleados
+ 1 file changed, 5 insertions(+)
+ create mode 100644 empleados.txt
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'recurso_humano' on GitHub by visiting:
+remote:      https://github.com/juandagit29/tercerrepositorio/pull/new/recurso_humano
+remote:
+To https://github.com/juandagit29/tercerrepositorio.git
+ * [new branch]      recurso_humano -> recurso_humano
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git merge producción
+Updating c776c39..99ac83b
+Fast-forward
+ materia prima.txt  |   1 +
+ pan.jpg            | Bin 0 -> 55602 bytes
+ producto final.txt |   1 +
+ 3 files changed, 2 insertions(+)
+ create mode 100644 materia prima.txt
+ create mode 100644 pan.jpg
+ create mode 100644 producto final.txt
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git commit -m "uni producción a main"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juandagit29/tercerrepositorio.git
+   c776c39..99ac83b  main -> main
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git tag version1.0 -m "version 1.0"
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git push
+Everything up-to-date
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git commit -m "cree la version 1.0"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git push
+Everything up-to-date
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git tag
+version1.0
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 165 bytes | 82.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juandagit29/tercerrepositorio.git
+ * [new tag]         version1.0 -> version1.0
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git diff
+diff --git a/empleados.txt b/empleados.txt
+index 4386893..a02eba9 100644
+--- a/empleados.txt
++++ b/empleados.txt
+@@ -2,4 +2,9 @@
+ - Jose
+ - Luis
+ - Saul
+-- Rodrigo
+\ No newline at end of file
++- Rodrigo
++- Laura
++- Sofia
++- Maria
++- Lucia
++- Ana
+\ No newline at end of file
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git status
+On branch recurso_humano
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   empleados.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git commit -m "agregue mas empleados"
+[recurso_humano e0b1c85] agregue mas empleados
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git push
+fatal: The current branch recurso_humano has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin recurso_humano
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 171.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juandagit29/tercerrepositorio.git
+   d1d730f..e0b1c85  recurso_humano -> recurso_humano
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git merge recurso_humano
+Merge made by the 'ort' strategy.
+ empleados.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 empleados.txt
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 308 bytes | 308.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandagit29/tercerrepositorio.git
+   99ac83b..69d7cde  main -> main
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git tag version1.1 -m "version 1.1"
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 165 bytes | 165.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juandagit29/tercerrepositorio.git
+ * [new tag]         version1.1 -> version1.1
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git commit -m "agregue mas tiendas"
+[ventas 3f64430] agregue mas tiendas
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git push origin ventas
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 359 bytes | 179.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juandagit29/tercerrepositorio.git
+   8a1f0c2..3f64430  ventas -> ventas
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (ventas)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git commit -m "agregue fotos"
+[recurso_humano 0b1e85e] agregue fotos
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fotos_empleados/Laura.jpg
+ create mode 100644 fotos_empleados/Maria.jpg
+ create mode 100644 fotos_empleados/Raul.jpg
+ create mode 100644 fotos_empleados/Saul.jpg
+ create mode 100644 fotos_empleados/Sofia.jpg
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 279.03 KiB | 8.72 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juandagit29/tercerrepositorio.git
+   e0b1c85..0b1e85e  recurso_humano -> recurso_humano
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git add .
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git commit -m "agregue sueldos"
+[recurso_humano e6f59df] agregue sueldos
+ 1 file changed, 4 insertions(+)
+ create mode 100644 sueldos.txt
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juandagit29/tercerrepositorio.git
+   0b1e85e..e6f59df  recurso_humano -> recurso_humano
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+juand@LAPTOP-H4L4S0FP MINGW64 /c/repositorio_examen/tercerrepositorio (main)
+$
